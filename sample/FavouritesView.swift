@@ -8,7 +8,7 @@ struct FavouritesView: View {
         
         VStack {
             ZStack{
-                Text("").foregroundColor(.white).font(.title).navigationTitle("Favourites").navigationBarTitleDisplayMode(.inline).font(.title)
+                Text("Testing").foregroundColor(.white).font(.callout).navigationTitle("Favourites").navigationBarTitleDisplayMode(.inline).font(.title)
                     .frame(maxWidth: .infinity)
                     .padding()
                     .background(ColorCodes.signUpButtonTextColor.ignoresSafeArea(edges: .top))

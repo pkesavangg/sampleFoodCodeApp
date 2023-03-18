@@ -25,8 +25,6 @@ struct Model: Codable, Identifiable, Hashable {
     var category: String
     var searchString: String
     var favorite: Bool?
-    
-    
 }
 
 extension Array {

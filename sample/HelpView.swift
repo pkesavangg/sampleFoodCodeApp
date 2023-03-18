@@ -55,7 +55,7 @@ struct HelpView: View {
                             Text("greatergoods.com/")
                         }
                         Spacer()
-                    }
+                    }.accentColor(.green)
                     HStack{
                         Text("Phone: ").font(.body)
                         Link(phoneNumber, destination: URL(string: "tel:\(phoneNumber)")!).foregroundColor(.green)
@@ -81,7 +81,9 @@ struct HelpView: View {
                 Text("App version: 2.0.0")
                 Spacer()
             }
-        }.navigationViewStyle(StackNavigationViewStyle())
+        }.navigationViewStyle(StackNavigationViewStyle()).onAppear{
+            setNavigationBarBackgroundColor(backgroundColor: .systemGreen, titleColor: .white)
+        }
         
     }
 }

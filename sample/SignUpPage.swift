@@ -20,17 +20,22 @@ struct SignUpPage: View {
     var  isFormValid : Bool {
         !firstName.isEmpty && !lastName.isEmpty
     }
-    
+    init() {
+        setNavigationBarBackgroundColor(backgroundColor: .systemGreen, titleColor: .white)
+        
+        
+        
+    }
     
     var body: some View {
         NavigationView {
             
             VStack {
-                Text("")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(ColorCodes.signUpButtonTextColor.ignoresSafeArea(edges: .top))
-                    .frame(maxWidth: .infinity)
+//                Text("")
+//                    .frame(maxWidth: .infinity)
+//                    .padding()
+//                    .background(ColorCodes.signUpButtonTextColor.ignoresSafeArea(edges: .top))
+//                    .frame(maxWidth: .infinity)
                 
                 VStack {
                     Text("First Name*")
@@ -51,6 +56,9 @@ struct SignUpPage: View {
                         .padding(.leading, 15)
                     
                     Divider().padding(.horizontal, 15)
+                    
+                    
+                    
                     checkBox(selected: self.$selected, show: self.$show)
                 }
                 

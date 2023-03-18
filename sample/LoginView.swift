@@ -100,7 +100,7 @@ struct LoginView: View {
                     NavigationLink("", destination: Dashboard(rootIsActive: self.$navigated), isActive: $navigated)
                     Button(action: {
                         self.navigated = true
-                        
+
                     }, label: {
                         if(isFormValid){
                             Text("NEXT")
@@ -111,9 +111,10 @@ struct LoginView: View {
                                 .foregroundColor(Color(.white).opacity(0.4)) + Text(Image(systemName: "arrow.right"))
                                 .foregroundColor(Color.white.opacity(0.4))
                         }
-                       
+
                     }).disabled(false)   //.disabled(!isFormValid)
                 }
+             
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(ColorCodes.signUpButtonTextColor.ignoresSafeArea(edges: .bottom))

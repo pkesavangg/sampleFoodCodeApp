@@ -10,8 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var navigated = false
     var body: some View {
-
-        HelpView()
+        DoCatchTryLearning()
     }
 }
 

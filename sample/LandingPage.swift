@@ -44,7 +44,7 @@ struct LandingPage: View {
                     NavigationLink("", destination: LoginView(), isActive: $loginNavigated)
                     Spacer()
                     
-                    NavigationLink("", destination: UrlView(urlValue: privacyLink), isActive: $privateScreen )
+//                    NavigationLink("", destination: UrlView(urlValue: privacyLink), isActive: $privateScreen )
                     
                     Button("Version 2.0.0-dev | PRIVACY POLICY QUESTIONS ?") {
                         self.privateScreen  = true

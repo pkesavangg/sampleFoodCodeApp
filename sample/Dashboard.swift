@@ -93,3 +93,10 @@ struct Dashboard: View {
         }.navigationBarBackButtonHidden(true).navigationViewStyle(StackNavigationViewStyle())
     }
 }
+
+
+struct Dashboard_Previews: PreviewProvider {
+    static var previews: some View {
+        Dashboard(rootIsActive: .constant(true))
+    }
+}
